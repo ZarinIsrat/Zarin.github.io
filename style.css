@@ -1,130 +1,393 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-*{
+/* =========================================================
+   GENERAL PAGE STYLE
+========================================================= */
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-a{
-    text-decoration: none;
-}
-.hero{
-    width: 100%;
-    height: 100vh;
-    background: url(img/bg1.jpg);
-    background-size: cover;
-}
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 30px 100px;
-}
-.logo{
-    max-height: 60px;
-}
-nav ul li{
-    list-style: none;
-    display: inline-block;
-    padding: 10px 20px;
-}
-nav ul li a{
-    color: #1d1d24;
-    position: relative;
-    padding: 5px 0;
-}
-nav ul li a:hover{
-    color: #fd4766;
-}
-nav ul li a:after{
-    content: "";
-    position: absolute;
-    left: 0;
-    width: 0;
-    height: 3px;
-    background: #fd4766;
-    transition: .3s;
-    bottom: 0;
-}
-nav ul li a:hover:after{
-    width: 100%;
-}
-.btn{
-    color: #fff;
-    font-size: 16px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    padding: 16px 40px;
-    border-radius: 500px;
-    display: inline-block;
-    font-weight: 500;
-    transition: all .4s ease-in-out;
-    background-size: 152% 100%;
-    background: #fd4766;
-    border: 2px solid #fd4766;
-}
-.btn:hover{
-    background: transparent;
-    border-color: #fd4766;
-    color: #fd4766;
-}
-.content{
-    position: absolute;
-    top: 35%;
-    left: 8%;
-}
-.content .title{
-    color: #1f1f25;
-    font-size: 15px;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    display: inline-block;
-    margin-bottom: 20px;
-    background: linear-gradient(120deg, #1c99fe 20.69%, #7644ff 50.19%,#fd4766 79.69%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.content h1{
-    color: #1f1f25;
-    font-size: 75px;
-    font-weight: 900;
-    line-height: 90px;
-    text-transform: inherit;
-    width: 70%;
-}
-.content h1 span{
-    color: #fd4766;
-}
-.content p{
-    width: 55%;
-    color: #757575;
-    margin-top: 25px;
-    margin-bottom: 30px;
-}
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
 }
 
-.fa:hover {
-    opacity: 0.7;
+html {
+    scroll-behavior: smooth;
 }
-.fa-linkedin {
-  background: #606162;
-  color: white;
-  border-radius: 50%;
+
+body {
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    background-color: #f5f7fa;
+    line-height: 1.7;
 }
-.fa-github {
-  background: #606162;
-  color: white;
-  border-radius: 50%;
+
+
+/* =========================================================
+   HERO / PAGE BACKGROUND
+========================================================= */
+
+.hero {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding-bottom: 50px;
+
+    background:
+        linear-gradient(
+            rgba(255, 255, 255, 0.76),
+            rgba(255, 255, 255, 0.82)
+        ),
+        url("1011.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
-.fa-envelope{
-  background: #606162;
-  color: white;
-  border-radius: 50%;
+
+
+/* =========================================================
+   NAVIGATION BAR
+========================================================= */
+
+nav {
+    width: 100%;
+    min-height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 7%;
+    background: rgba(255, 255, 255, 0.92);
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.12);
+    position: relative;
+    z-index: 1000;
+}
+
+nav ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+    list-style: none;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px 17px;
+    color: #222;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+    background-color: #0b72b9;
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   LOGO / AVATAR
+========================================================= */
+
+.logo {
+    width: 75px;
+    height: 75px;
+    margin-right: auto;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    border: 3px solid #0b72b9;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+}
+
+
+/* =========================================================
+   HOME PAGE CONTENT
+========================================================= */
+
+.content {
+    width: 90%;
+    max-width: 1100px;
+    min-height: calc(100vh - 150px);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.content .title {
+    display: block;
+}
+
+.content h1 {
+    margin-bottom: 12px;
+    color: #1b1b1b;
+    font-size: clamp(42px, 6vw, 72px);
+    line-height: 1.15;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+}
+
+.content h1 span {
+    color: #0b72b9;
+}
+
+.content p {
+    margin-bottom: 28px;
+    color: #333;
+    font-size: 21px;
+    font-weight: 500;
+}
+
+
+/* =========================================================
+   BUTTON
+========================================================= */
+
+.btn {
+    display: inline-block;
+    padding: 13px 28px;
+    color: #ffffff;
+    background: #0b72b9;
+    border: 2px solid #0b72b9;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(11, 114, 185, 0.28);
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    color: #0b72b9;
+    background: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(11, 114, 185, 0.35);
+}
+
+
+/* =========================================================
+   ABOUT, RESEARCH AND CONTACT CONTENT
+========================================================= */
+
+.about {
+    width: 88%;
+    max-width: 1050px;
+    margin: 50px auto;
+    padding: 38px 45px;
+    background: rgba(255, 255, 255, 0.94);
+    border-radius: 14px;
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.15);
+}
+
+.about h2 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    color: #0b72b9;
+    font-size: 28px;
+    border-bottom: 2px solid #d8e8f3;
+}
+
+.about h2:first-of-type {
+    margin-top: 0;
+}
+
+.about h3 {
+    margin: 20px 0;
+    color: #333;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.about h4 {
+    margin-bottom: 20px;
+    color: #444;
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 1.8;
+}
+
+.about p {
+    margin-bottom: 20px;
+    color: #444;
+    font-size: 17px;
+}
+
+.about ul {
+    margin: 10px 0 25px 28px;
+}
+
+.about ul li {
+    margin-bottom: 10px;
+    padding-left: 5px;
+    color: #333;
+    font-size: 16px;
+}
+
+.about ul li::marker {
+    color: #0b72b9;
+}
+
+
+/* =========================================================
+   CONTACT LINKS
+========================================================= */
+
+.about a {
+    color: #0b72b9;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.about a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+    width: 100%;
+    padding: 22px 15px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.94);
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+footer a {
+    display: inline-flex;
+    width: 46px;
+    height: 46px;
+    margin: 0 7px;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    background: #0b72b9;
+    border-radius: 50%;
+    font-size: 21px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+footer a:hover {
+    color: #0b72b9;
+    background: #ffffff;
+    box-shadow: 0 4px 12px rgba(11, 114, 185, 0.35);
+    transform: translateY(-3px);
+}
+
+
+/* =========================================================
+   TABLET RESPONSIVE DESIGN
+========================================================= */
+
+@media screen and (max-width: 900px) {
+
+    nav {
+        padding: 14px 4%;
+    }
+
+    nav ul {
+        gap: 5px;
+    }
+
+    nav ul li a {
+        padding: 9px 10px;
+        font-size: 14px;
+    }
+
+    .logo {
+        width: 62px;
+        height: 62px;
+    }
+
+    .content {
+        min-height: calc(100vh - 130px);
+    }
+
+    .about {
+        width: 92%;
+        padding: 30px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE RESPONSIVE DESIGN
+========================================================= */
+
+@media screen and (max-width: 650px) {
+
+    .hero {
+        background-attachment: scroll;
+        background-position: center;
+    }
+
+    nav {
+        padding: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 4px;
+    }
+
+    .logo {
+        width: 60px;
+        height: 60px;
+        margin: 0 auto 10px;
+        flex-basis: 100%;
+    }
+
+    nav ul li a {
+        padding: 8px 9px;
+        font-size: 13px;
+    }
+
+    .content {
+        width: 88%;
+        min-height: calc(100vh - 180px);
+        align-items: center;
+        text-align: center;
+    }
+
+    .content h1 {
+        font-size: 42px;
+    }
+
+    .content p {
+        font-size: 18px;
+    }
+
+    .about {
+        width: 92%;
+        margin: 30px auto;
+        padding: 25px 20px;
+    }
+
+    .about h2 {
+        font-size: 24px;
+    }
+
+    .about h3 {
+        font-size: 19px;
+    }
+
+    .about h4,
+    .about p,
+    .about ul li {
+        font-size: 15px;
+    }
 }
