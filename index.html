@@ -2,47 +2,146 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio Website</title>
-    <!----CSS link----->
-    <link rel="stylesheet" href="style.css">
-	<style>
-	nav{
-	    
-         margin-left: 600px;}
-		
-		 .about{
-		    margin-left: 300px;
-		 }
-		  </style>
-		  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
-    
-    <div class="hero">
-        <nav>
-      
-            
-            <ul>
-			    
-                <li><a href="index">Home</a></li>
-                <li><a href="Other/About">About</a></li>
-                <li><a href="Other/Research">Research</a></li>
-                <li><a href="Other/Contact">Contact</a></li>
-		</ul>
 
-        </nav>
-        <div class="content">
-            <span class="title"></span>
-            <h1>Hello, I’m <span>Zarin</span></h1>
-            <p>I’m working as a Graduate Research Assistant.</p>
-            <a href="Israt Zarin.pdf" class="btn">Download CV</a>
-        </div>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body{
+            margin:0;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        .hero{
+            width:100%;
+            height:100vh;
+
+            background:
+            linear-gradient(
+                rgba(255,255,255,.72),
+                rgba(255,255,255,.72)
+            ),
+            url("background.jpg");
+
+            background-size:cover;
+            background-position:center;
+            background-repeat:no-repeat;
+        }
+
+        nav{
+            display:flex;
+            justify-content:flex-end;
+            padding:30px 80px;
+        }
+
+        nav ul{
+            list-style:none;
+            display:flex;
+            gap:30px;
+        }
+
+        nav ul li{
+            display:inline-block;
+        }
+
+        nav ul li a{
+            text-decoration:none;
+            color:#222;
+            font-weight:bold;
+            font-size:18px;
+        }
+
+        nav ul li a:hover{
+            color:#0077cc;
+        }
+
+        .content{
+            position:absolute;
+            top:50%;
+            left:8%;
+            transform:translateY(-50%);
+        }
+
+        .content h1{
+            font-size:65px;
+            margin-bottom:10px;
+        }
+
+        .content h1 span{
+            color:#0077cc;
+        }
+
+        .content p{
+            font-size:22px;
+            margin-bottom:30px;
+        }
+
+        .btn{
+            display:inline-block;
+            background:#0077cc;
+            color:#fff;
+            padding:12px 28px;
+            text-decoration:none;
+            border-radius:5px;
+        }
+
+        footer{
+            position:absolute;
+            bottom:20px;
+            width:100%;
+            text-align:center;
+        }
+
+        footer a{
+            text-decoration:none;
+            font-size:30px;
+            margin:0 15px;
+            color:#333;
+        }
+
+        footer a:hover{
+            color:#0077cc;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="hero">
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Other/about.html">About</a></li>
+            <li><a href="Other/Research.html">Research</a></li>
+            <li><a href="Other/Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <h1>Hello, I'm <span>Zarin</span></h1>
+
+        <p>
+            Graduate Research Assistant<br>
+            University of Nebraska–Lincoln
+        </p>
+
+        <a href="Israt Zarin.pdf" class="btn">
+            Download CV
+        </a>
     </div>
-	   <center>
-		<footer>
-			<a href="https://www.linkedin.com/in/israt-zarin/" class="fa fa-linkedin"></a>
-			<a href="mailto:zarindola@gmail.com" class="fa fa-envelope"></a>
-			<a href="https://github.com/ZarinIsrat" class="fa fa-github"></a>
-		</footer>
-		</center>
+
+    <footer>
+        <a href="https://www.linkedin.com/in/israt-zarin/" class="fa fa-linkedin"></a>
+        <a href="mailto:zarindola@gmail.com" class="fa fa-envelope"></a>
+        <a href="https://github.com/ZarinIsrat" class="fa fa-github"></a>
+    </footer>
+
+</div>
+
 </body>
+</html>
