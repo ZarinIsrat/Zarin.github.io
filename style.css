@@ -11,9 +11,9 @@ a{
     text-decoration:none;
 }
 
-/*=========================
-        HERO SECTION
-=========================*/
+/*==========================
+        HERO
+===========================*/
 .hero{
     width:100%;
     min-height:100vh;
@@ -21,33 +21,17 @@ a{
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
-
-    /* Keeps content below the fixed menu */
-    padding-top:100px;
 }
 
-/*=========================
+/*==========================
         NAVIGATION
-=========================*/
+===========================*/
 nav{
-    position:fixed;
-    top:0;
-    left:0;
     width:100%;
-
     display:flex;
     justify-content:center;
     align-items:center;
-
-    padding:25px 0;
-
-    background:rgba(255,255,255,.92);
-
-    z-index:1000;
-}
-
-.logo{
-    max-height:60px;
+    padding:30px 0;
 }
 
 nav ul{
@@ -56,7 +40,7 @@ nav ul{
 
 nav ul li{
     display:inline-block;
-    margin:0 18px;
+    padding:10px 20px;
 }
 
 nav ul li a{
@@ -64,7 +48,6 @@ nav ul li a{
     position:relative;
     padding:5px 0;
     font-size:18px;
-    font-weight:500;
 }
 
 nav ul li a:hover{
@@ -86,9 +69,9 @@ nav ul li a:hover:after{
     width:100%;
 }
 
-/*=========================
+/*==========================
         BUTTON
-=========================*/
+===========================*/
 .btn{
     color:#fff;
     font-size:16px;
@@ -109,15 +92,14 @@ nav ul li a:hover:after{
     border-color:#fd4766;
 }
 
-/*=========================
-      HOME PAGE CONTENT
-=========================*/
+/*==========================
+      HOME PAGE
+===========================*/
 .content{
     position:absolute;
     top:40%;
     left:12%;
     transform:translateY(-50%);
-    max-width:650px;
 }
 
 .content .title{
@@ -127,12 +109,7 @@ nav ul li a:hover:after{
     letter-spacing:4px;
     display:inline-block;
     margin-bottom:20px;
-    background:linear-gradient(
-        120deg,
-        #1c99fe 20.69%,
-        #7644ff 50.19%,
-        #fd4766 79.69%
-    );
+    background:linear-gradient(120deg,#1c99fe 20.69%,#7644ff 50.19%,#fd4766 79.69%);
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent;
 }
@@ -156,13 +133,12 @@ nav ul li a:hover:after{
     margin-bottom:30px;
 }
 
-/*=========================
-   ABOUT / RESEARCH /
-      CONTACT PAGES
-=========================*/
+/*==========================
+ OTHER PAGES
+===========================*/
 .about{
     width:80%;
-    margin:40px auto;
+    margin:30px auto;
     color:#1f1f25;
     line-height:1.8;
 }
@@ -186,22 +162,21 @@ nav ul li a:hover:after{
     margin-bottom:8px;
 }
 
-/*=========================
-        FOOTER
-=========================*/
+/*==========================
+ FOOTER
+===========================*/
 footer{
-    margin-top:40px;
-    margin-bottom:20px;
     text-align:center;
+    padding:30px 0;
 }
 
 .fa{
     padding:20px;
     font-size:30px;
-    width:60px;
+    width:50px;
     text-align:center;
     text-decoration:none;
-    margin:5px;
+    margin:5px 2px;
 }
 
 .fa:hover{
@@ -212,6 +187,6 @@ footer{
 .fa-github,
 .fa-envelope{
     background:#606162;
-    color:#fff;
+    color:white;
     border-radius:50%;
 }
