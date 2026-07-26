@@ -139,7 +139,7 @@ nav ul li a:hover:after{
 }
 
 /*==========================
-       OTHER PAGES
+      OTHER PAGES
 ===========================*/
 .about{
     width:80%;
@@ -162,13 +162,29 @@ nav ul li a:hover:after{
     font-weight:500;
 }
 
+/* Main bullet lists */
 .about ul{
-    margin-left:25px;
-    margin-bottom:5px;
+    margin-left:30px;
+    margin-bottom:10px;
+    padding-left:10px;
 }
 
+/* Main bullet items */
 .about li{
-    margin-bottom:1px;
+    margin-bottom:6px;
+    line-height:1.5;
+}
+
+/* Nested bullet lists (Research / Projects) */
+.about ul ul{
+    margin-top:6px;
+    margin-left:25px;
+    margin-bottom:6px;
+}
+
+.about ul ul li{
+    margin-bottom:5px;
+    line-height:1.5;
 }
 
 /*==========================
