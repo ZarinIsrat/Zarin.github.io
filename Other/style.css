@@ -14,17 +14,13 @@ a{
 /*==========================
         HERO
 ===========================*/
-
-
 .hero{
     width:100%;
     min-height:100vh;
     background:url(2.png);
     background-size:cover;
-    background-position:center top;
+    background-position:center;
     background-repeat:no-repeat;
-    background-attachment:fixed;
-    padding-bottom:40px;
 }
 
 /*==========================
@@ -35,7 +31,7 @@ nav{
     display:flex;
     justify-content:center;
     align-items:center;
-    padding:30px 0;
+    padding:12px 0;
 }
 
 nav ul{
@@ -44,14 +40,14 @@ nav ul{
 
 nav ul li{
     display:inline-block;
-    padding:10px 20px;
+    padding:8px 18px;
 }
 
 nav ul li a{
     color:#1d1d24;
     position:relative;
     padding:5px 0;
-    font-size:18px;
+    font-size:17px;
 }
 
 nav ul li a:hover{
@@ -104,8 +100,6 @@ nav ul li a:hover:after{
     top:40%;
     left:12%;
     transform:translateY(-50%);
-
-    
 }
 
 .content .title{
@@ -115,7 +109,12 @@ nav ul li a:hover:after{
     letter-spacing:4px;
     display:inline-block;
     margin-bottom:20px;
-    background:linear-gradient(120deg,#1c99fe 20.69%,#7644ff 50.19%,#fd4766 79.69%);
+    background:linear-gradient(
+        120deg,
+        #1c99fe 20.69%,
+        #7644ff 50.19%,
+        #fd4766 79.69%
+    );
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent;
 }
@@ -140,49 +139,55 @@ nav ul li a:hover:after{
 }
 
 /*==========================
- OTHER PAGES
+       OTHER PAGES
 ===========================*/
 .about{
     width:80%;
-    margin:30px auto;
+    margin:5px auto;
     color:#1f1f25;
-    line-height:1.8;
+    line-height:1.35;
+    font-size:14px;
 }
 
 .about h2{
-    margin-top:25px;
-    margin-bottom:10px;
+    margin-top:8px;
+    margin-bottom:3px;
+    font-size:19px;
 }
 
 .about h3,
 .about h4{
-    margin-bottom:15px;
+    margin-bottom:5px;
+    font-size:14px;
+    font-weight:500;
 }
 
 .about ul{
     margin-left:25px;
-    margin-bottom:20px;
+    margin-bottom:5px;
 }
 
 .about li{
-    margin-bottom:8px;
+    margin-bottom:1px;
 }
 
 /*==========================
- FOOTER
+        FOOTER
 ===========================*/
 footer{
     text-align:center;
-    padding:30px 0;
+    padding:8px 0;
 }
 
 .fa{
-    padding:20px;
-    font-size:30px;
-    width:50px;
+    padding:12px;
+    font-size:22px;
+    width:45px;
+    height:45px;
+    line-height:21px;
     text-align:center;
     text-decoration:none;
-    margin:5px 2px;
+    margin:3px 2px;
 }
 
 .fa:hover{
