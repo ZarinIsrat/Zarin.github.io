@@ -14,13 +14,17 @@ a{
 /*==========================
         HERO
 ===========================*/
+
+
 .hero{
     width:100%;
     min-height:100vh;
     background:url(2.png);
     background-size:cover;
-    background-position:center;
+    background-position:center top;
     background-repeat:no-repeat;
+    background-attachment:fixed;
+    padding-bottom:40px;
 }
 
 /*==========================
@@ -100,6 +104,8 @@ nav ul li a:hover:after{
     top:40%;
     left:12%;
     transform:translateY(-50%);
+
+    
 }
 
 .content .title{
